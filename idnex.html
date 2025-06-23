@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latest News</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 0; font-family: 'Roboto', sans-serif; background: #f9f9f9; color: #333; }
+    header { background: #005f73; padding: 1.5rem; text-align: center; }
+    header h1 { margin: 0; font-size: 2rem; color: #fff; font-weight: 700; }
+    .container { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+    .articles { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden; display: flex; flex-direction: column; }
+    .card-content { padding: 1rem; flex: 1; display: flex; flex-direction: column; }
+    .meta { font-size: 0.8rem; color: #999; }
+    .card h2 { margin: 0.5rem 0; font-size: 1.25rem; font-weight: 700; }
+    .card p { flex: 1; font-size: 1rem; line-height: 1.5; margin: 0.5rem 0; color: #555; }
+    .card a { align-self: flex-start; text-decoration: none; color: #0077b6; font-weight: 600; font-size: 0.9rem; }
+    .card a:hover { text-decoration: underline; }
+    footer { text-align: center; padding: 1rem 0; font-size: 0.8rem; color: #777; }
+  </style>
 </head>
 <body>
-    <h1>Xeber sayti</h1>
+  <header>
+    <h1>Latest News</h1>
+  </header>
+  <div class="container">
+    <div class="articles">
+      <article class="card">
+        <div class="card-content">
+          <div class="meta">June 23, 2025</div>
+          <h2>Tech Innovation Boosts Productivity</h2>
+          <p>New AI-driven tools are revolutionizing workflows across industries, allowing workers to focus on creative tasks.</p>
+          <a href="#">Read more →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-content">
+          <div class="meta">June 22, 2025</div>
+          <h2>Global Markets Rally Amid Optimism</h2>
+          <p>Stock markets around the world saw gains as investors responded to positive economic indicators.</p>
+          <a href="#">Read more →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-content">
+          <div class="meta">June 21, 2025</div>
+          <h2>Breakthrough in Renewable Energy Storage</h2>
+          <p>Scientists have developed a new battery technology that promises faster charging and longer lifespan.</p>
+          <a href="#">Read more →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-content">
+          <div class="meta">June 20, 2025</div>
+          <h2>Championship Game Thrills Fans</h2>
+          <p>The underdogs triumphed in a nail-biting finale, earning their first title in over a decade.</p>
+          <a href="#">Read more →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+  <footer>&copy; 2025 News Corp</footer>
 </body>
 </html>
